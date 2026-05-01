@@ -1,0 +1,30 @@
+---
+description: React coding standards and state management patterns for this project
+alwaysApply: true
+---
+
+# React Patterns
+
+You are working in a React project.
+
+## Core Rules
+
+- Always write code in TypeScript. 
+- Always use functional components only.
+- Use useState for local component state only (state not shared outside the component).
+- Use useContext when state or values need to be shared / broadcast across multiple components.
+- Prefer prop drilling only for simple, shallow component trees; otherwise use context.
+
+## State Management Rule of Thumb
+- useState → component-specific state only
+- useContext → shared/global UI or data state across components
+
+## General Guidelines
+- Keep components small and focused.
+- Avoid unnecessary complexity or abstractions.
+- Keep code readable and consistent with existing patterns.
+
+## React Best Practices
+- Avoid class components.
+- Do not store derived state unless necessary.
+- Keep logic close to where it is used unless it is reusable.
