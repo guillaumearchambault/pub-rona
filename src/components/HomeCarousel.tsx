@@ -28,8 +28,8 @@ export default function HomeCarousel() {
           <a
             className="homeCarouselSearchLink"
             href="https://www.rona.ca/"
-  
-        
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Rechercher des pièces
           </a>

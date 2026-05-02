@@ -97,6 +97,10 @@ body {
   overflow: hidden;
   width: 100%;
   cursor: pointer;
+  /* Avoid full-screen tap flash on large touch / kiosk displays (WebKit/Blink). */
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  user-select: none;
 }
 
 .homeCarouselStack {
