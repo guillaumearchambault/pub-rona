@@ -14,7 +14,6 @@ Use **camelCase** for every class name. Do not use kebab-case, underscores, or s
 - **Multi-word block**: camelCase — `siteHeader`, `productCard`.
 - **Block + element**: concatenate with a capital — e.g. block `home` → `homeHeader`, `homeTitle`, `homeHero`.
 - **Modifier**: prefer a second camelCase class — e.g. `btn btnPrimary`, `card cardHighlighted`. Or one compound class — e.g. `cardExpanded`, `menuOpen`.
-
 Keep names short; avoid deeply stacked compounds (`fooBarBazQuux`) unless necessary.
 
 ## Examples
