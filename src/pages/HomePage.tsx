@@ -1,13 +1,9 @@
 export default function HomePage() {
   return (
     <main className="home">
-      <header className="home__header">
-        <h1 className="home__title">Home</h1>
-        <p className="home__subtitle">Portrait hero (1080×1920 px)</p>
-      </header>
-      <figure className="home__figure">
+      <figure className="homeFigure">
         <img
-          className="home__hero"
+          className="homeHero"
           src="/hero-1080x1920.png"
           alt=""
           width={1080}
@@ -15,7 +11,6 @@ export default function HomePage() {
           loading="lazy"
           decoding="async"
         />
-        <figcaption className="home__caption">Background art placeholder</figcaption>
       </figure>
     </main>
   );

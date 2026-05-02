@@ -1,0 +1,36 @@
+---
+description: camelCase naming for CSS classes and matching className in TSX
+globs: "**/*.css,**/*.tsx"
+alwaysApply: false
+---
+
+# CSS class naming (camelCase)
+
+Use **camelCase** for every class name. Do not use kebab-case, underscores, or strict BEM separators (`__`, `--`) in class strings.
+
+## Pattern
+
+- **Single-word block**: lowercase — `home`, `card`, `modal` — when the block name is one word.
+- **Multi-word block**: camelCase — `siteHeader`, `productCard`.
+- **Block + element**: concatenate with a capital — e.g. block `home` → `homeHeader`, `homeTitle`, `homeHero`.
+- **Modifier**: prefer a second camelCase class — e.g. `btn btnPrimary`, `card cardHighlighted`. Or one compound class — e.g. `cardExpanded`, `menuOpen`.
+
+Keep names short; avoid deeply stacked compounds (`fooBarBazQuux`) unless necessary.
+
+## Examples
+
+```css
+/* ✅ GOOD */
+.home { }
+.homeHeader { }
+.homeTitle { }
+.homeHero { }
+.siteHeader { }
+
+/* ❌ BAD */
+.home-header { }
+.home__title { }
+.card__body--compact { }
+```
+
+Use the **same** class strings in React `className`. Class names are case-sensitive in HTML/CSS, so typos in casing break styles.
