@@ -49,3 +49,124 @@ body {
   height: auto;
 }
 
+/* --- Carousel --- */
+
+.homeCarousel {
+  width: 100%;
+  max-width: 1080px;
+}
+
+.homeCarouselTopBar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.5rem 0 0.75rem;
+}
+
+.homeCarouselSearchLink {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #7dd3fc;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.homeCarouselSearchLink:hover {
+  color: #bae6fd;
+}
+
+.homeCarouselViewport {
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 24px 60px rgb(0 0 0 / 45%);
+  touch-action: manipulation;
+}
+
+.homeCarouselTrack {
+  display: flex;
+  width: 300%;
+  transition: transform 0.45s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .homeCarouselTrack {
+    transition: none;
+  }
+}
+
+.homeCarouselSlide {
+  flex: 0 0 calc(100% / 3);
+  min-height: 0;
+}
+
+.homeCarouselFigure {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #111827;
+}
+
+.homeCarouselHeroImg {
+  display: block;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.homeCarouselPlaceholder {
+  aspect-ratio: 9 / 16;
+  max-height: min(90vh, 960px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  box-sizing: border-box;
+}
+
+.homeCarouselPlaceholderPlan {
+  background: linear-gradient(160deg, #1e293b 0%, #0f172a 100%);
+}
+
+.homeCarouselPlaceholderPub {
+  background: linear-gradient(160deg, #312e81 0%, #1e1b4b 100%);
+}
+
+.homeCarouselPlaceholderTitle {
+  margin: 0 0 0.75rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.homeCarouselPlaceholderText {
+  margin: 0;
+  max-width: 22rem;
+  font-size: 1rem;
+  color: #cbd5e1;
+  line-height: 1.55;
+}
+
+.homeCarouselDots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 0 0;
+}
+
+.homeCarouselDot {
+  width: 0.65rem;
+  height: 0.65rem;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: #334155;
+  cursor: pointer;
+}
+
+.homeCarouselDot[aria-selected='true'] {
+  background: #38bdf8;
+  transform: scale(1.15);
+}
+
