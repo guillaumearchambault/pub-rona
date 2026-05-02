@@ -4,7 +4,7 @@ export default function HomePage() {
       <figure className="homeFigure">
         <img
           className="homeHero"
-          src="/mike-rona.png"
+          src="/mike.jpg"
           alt=""
           width={1080}
           height={1920}
