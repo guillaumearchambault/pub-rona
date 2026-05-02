@@ -8,7 +8,11 @@ type CarouselTopBarProps = {
 export function CarouselTopBar({ searchUrl, onOpenSearch }: CarouselTopBarProps) {
   return (
     <div className="homeCarouselTopBar">
-      <a className="homeCarouselSearchLink" href={searchUrl} onClick={onOpenSearch}>
+      <a
+        className="homeCarouselPillButton homeCarouselPillButton--search"
+        href={searchUrl}
+        onClick={onOpenSearch}
+      >
         Rechercher des pièces
       </a>
     </div>

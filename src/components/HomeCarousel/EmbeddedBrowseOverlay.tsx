@@ -12,7 +12,7 @@ export function EmbeddedBrowseOverlay({ url, onClose }: EmbeddedBrowseOverlayPro
       aria-label="Recherche Rona"
     >
       <div className="homeCarouselEmbedToolbar">
-        <button type="button" className="homeCarouselEmbedBack" onClick={onClose}>
+        <button type="button" className="homeCarouselPillButton" onClick={onClose}>
           Retour
         </button>
       </div>

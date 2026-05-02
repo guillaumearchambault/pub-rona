@@ -75,21 +75,42 @@ body {
   width: auto;
   max-width: min(100%, 22rem);
   box-sizing: border-box;
-  padding: 0.75rem 1rem;
+  padding: 2.25rem 1rem;
   pointer-events: none;
 }
 
-.homeCarouselSearchLink {
-  pointer-events: auto;
-  font-size: 0.9375rem;
+/* Shared by « Rechercher des pièces » (top bar) and « Retour » (embed toolbar). */
+.homeCarouselPillButton {
+  appearance: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0.55rem 1rem;
+  box-sizing: border-box;
+  font: inherit;
   font-weight: 600;
+  font-size: 0.9375rem;
+  color: #e2e8f0;
+  text-decoration: none;
+  text-align: center;
+  background: #1e293b;
+  border: 1px solid rgb(148 163 184 / 35%);
+  border-radius: 0.375rem;
+  cursor: pointer;
+  pointer-events: auto;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+.homeCarouselPillButton:hover {
+  background: #334155;
+}
+
+.homeCarouselPillButton--search {
   color: #7dd3fc;
-  text-decoration: underline;
-  text-underline-offset: 0.15em;
   text-shadow: 0 1px 3px rgb(0 0 0 / 85%);
 }
 
-.homeCarouselSearchLink:hover {
+.homeCarouselPillButton--search:hover {
   color: #bae6fd;
 }
 
@@ -107,30 +128,12 @@ body {
 .homeCarouselEmbedToolbar {
   flex: 0 0 auto;
   display: flex;
-  align-items: center;
-  padding: 0.65rem 1rem;
+  justify-content: flex-end;
+  align-items: flex-start;
+  box-sizing: border-box;
+  padding: 2.25rem 1rem;
   background: #111827;
   border-bottom: 1px solid rgb(148 163 184 / 22%);
-}
-
-.homeCarouselEmbedBack {
-  appearance: none;
-  margin: 0;
-  padding: 0.55rem 1rem;
-  font: inherit;
-  font-weight: 600;
-  font-size: 0.9375rem;
-  color: #e2e8f0;
-  background: #1e293b;
-  border: 1px solid rgb(148 163 184 / 35%);
-  border-radius: 0.375rem;
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-  touch-action: manipulation;
-}
-
-.homeCarouselEmbedBack:hover {
-  background: #334155;
 }
 
 .homeCarouselEmbedFrame {
