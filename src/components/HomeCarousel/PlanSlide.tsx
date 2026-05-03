@@ -8,10 +8,18 @@ export function PlanSlide({ isActive }: PlanSlideProps) {
       className={`homeCarouselSlide ${isActive ? 'homeCarouselSlideActive' : ''}`}
       aria-hidden={!isActive}
     >
-      <div className="homeCarouselPlaceholder homeCarouselPlaceholderPlan">
-        <h2 className="homeCarouselPlaceholderTitle">Plan du site</h2>
-        <p className="homeCarouselPlaceholderText">Un PDF sera ajouté ici prochainement.</p>
-      </div>
+      <figure className="homeCarouselFigure">
+        <img
+          className="homeCarouselHeroImg"
+          src="/siteplan.jpg"
+          alt="Plan du magasin RONA+ Mascouche : rayons, entrées et code QR pour localiser les produits."
+          width={1536}
+          height={1024}
+          loading="lazy"
+          decoding="async"
+          draggable={false}
+        />
+      </figure>
     </div>
   );
 }
