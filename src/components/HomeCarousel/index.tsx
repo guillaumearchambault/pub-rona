@@ -6,7 +6,7 @@ import { PlanSlide } from './PlanSlide';
 import { PubSlide } from './PubSlide';
 
 const SLIDE_COUNT = 3;
-const INTERVAL_MS = 10000;
+const INTERVAL_MS = 20000;
 const RONA_SEARCH_URL = 'https://www.rona.ca/';
 
 export default function HomeCarousel() {
